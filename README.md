@@ -245,7 +245,32 @@ Boolean()转换引用数据类型 结果都是true
 ```
 ### for执行顺序
 ```
-  ### 数组方法
+ 
+
+   求：  1+2+3+...+100=?
+   var sum=0;
+   for(var i=1;i<=100;i++){
+       sum+=a;
+   }
+   console.log(sum);  // 1-100的和2525
+   console.log(i);   //最后循环后的i是 101
+    // 第一步： var i=1;
+    //第二步：i<=100；   如果返回false 循环终止
+    //第三步：sum+=a;
+    //第四步：i++；  跌代语句
+    //第五步：重复二到四步
+
+    for循环 写出 56---1024  所有整数的和
+    var sum=0;
+
+    for(var a=56;a<=1024;a++){
+        sum+=a;
+    }
+    console.log(sum);
+```
+# 第三章 数组方法
+```
+ ### 数组方法
     
       1.push() 数组后面添加一项或者多项   方法返回新数组的长度
                参数：一个或多个
@@ -297,25 +322,4 @@ Boolean()转换引用数据类型 结果都是true
                   var a=arr.join("+");
                   console.log(a,arr);
                   
-
-   求：  1+2+3+...+100=?
-   var sum=0;
-   for(var i=1;i<=100;i++){
-       sum+=a;
-   }
-   console.log(sum);  // 1-100的和2525
-   console.log(i);   //最后循环后的i是 101
-    // 第一步： var i=1;
-    //第二步：i<=100；   如果返回false 循环终止
-    //第三步：sum+=a;
-    //第四步：i++；  跌代语句
-    //第五步：重复二到四步
-
-    for循环 写出 56---1024  所有整数的和
-    var sum=0;
-
-    for(var a=56;a<=1024;a++){
-        sum+=a;
-    }
-    console.log(sum);
 ```
